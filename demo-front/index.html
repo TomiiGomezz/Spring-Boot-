@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Registro de productos</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Registro de productos</h1>
+        <form>
+            <div class="mb-3">
+              <label for="productID" class="form-label" hidden>ID</label>
+              <input type="text" class="form-control" id="productID" hidden>
+            </div>
+            <div class="mb-3">
+              <label for="productName" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="productName">
+            </div>
+            <div class="mb-3">
+                <label for="productPrice" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="productPrice">
+              </div>
+              <div class="mb-3">
+                <label for="productQuantity" class="form-label">Cantidad</label>
+                <input type="number" class="form-control" id="productQuantity">
+              </div>
+            <button type="submit" class="btn btn-primary" id="productSave">Guardar</button>
+          </form>
+    </div>
+
+    <div class="container mt-4">
+        <h2>Listado de productos</h2>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cantidad</th>
+                <th scope="col">Acciones</th>
+              </tr>
+            </thead>
+            <tbody id="productTable">
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td><button type="submit" class="btn btn-warning" >Editar</button>
+                <button type="submit" class="btn btn-danger" >Eliminar</button></td>
+              </tr>
+             
+            </tbody>
+          </table>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
